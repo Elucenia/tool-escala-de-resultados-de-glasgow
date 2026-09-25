@@ -1,0 +1,220 @@
+{
+  "tool": {
+    "id": "escala-de-resultados-de-glasgow",
+    "title": "Escala de Resultados de Glasgow (GOS)",
+    "short": "Desfecho funcional após lesão cerebral",
+    "spec": [
+      "neurocirurgia",
+      "medicina-intensiva",
+      "medicina-fisica-e-reabilitacao",
+      "neurologia"
+    ],
+    "desc": "Escala de Resultados de Glasgow (Glasgow Outcome Scale): desfecho após trauma cranioencefálico ou lesão cerebral grave, de óbito a boa recuperação.",
+    "lead": "Classifica o desfecho global depois de lesão cerebral grave (trauma, hemorragia, hipóxia) em cinco categorias, do óbito à boa recuperação.",
+    "fields": [
+      [
+        "gos",
+        "Situação do paciente",
+        "sel",
+        {
+          "opts": {
+            "1": "1 – Óbito",
+            "2": "2 – Estado vegetativo persistente: sem resposta com significado, ciclos de sono e vigília",
+            "3": "3 – Incapacidade grave: consciente, mas depende de outra pessoa no dia a dia",
+            "4": "4 – Incapacidade moderada: independente, mas com sequelas (pode usar transporte, trabalhar em ambiente protegido)",
+            "5": "5 – Boa recuperação: retoma a vida normal, mesmo com déficits menores"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "Glasgow Outcome Scale",
+      "unit": "de 5",
+      "bands": [
+        [
+          1,
+          "high",
+          "Óbito",
+          ""
+        ],
+        [
+          2,
+          "high",
+          "Estado vegetativo persistente (desfecho desfavorável)",
+          ""
+        ],
+        [
+          3,
+          "high",
+          "Incapacidade grave (desfecho desfavorável)",
+          ""
+        ],
+        [
+          4,
+          "mid",
+          "Incapacidade moderada (desfecho favorável)",
+          ""
+        ],
+        [
+          5,
+          "low",
+          "Boa recuperação (desfecho favorável)",
+          ""
+        ]
+      ]
+    },
+    "formula": "<p>Escolha a categoria que melhor descreve o paciente. Nos estudos, o desfecho é geralmente dicotomizado em <strong>favorável</strong> (4 e 5) e <strong>desfavorável</strong> (1 a 3).</p>",
+    "table": [
+      [
+        "GOS",
+        "Categoria",
+        "Desfecho"
+      ],
+      [
+        "1",
+        "Óbito",
+        "Desfavorável"
+      ],
+      [
+        "2",
+        "Estado vegetativo persistente",
+        "Desfavorável"
+      ],
+      [
+        "3",
+        "Incapacidade grave",
+        "Desfavorável"
+      ],
+      [
+        "4",
+        "Incapacidade moderada",
+        "Favorável"
+      ],
+      [
+        "5",
+        "Boa recuperação",
+        "Favorável"
+      ]
+    ],
+    "tips": [
+      "A avaliação padrão é feita em 6 meses após a lesão; em 3 meses o desfecho ainda muda bastante, principalmente em jovens.",
+      "A GOS estendida (GOS-E, 8 categorias) divide incapacidade grave, moderada e boa recuperação em níveis superior e inferior e é mais sensível a mudanças.",
+      "Classifique pela incapacidade decorrente da lesão cerebral: limitações por fraturas ou outras lesões associadas podem confundir.",
+      "Não confunda com a escala de coma de Glasgow (nível de consciência na fase aguda)."
+    ],
+    "sources": [
+      [
+        "Jennett B, Bond M. Assessment of outcome after severe brain damage: a practical scale. Lancet, 1975.",
+        "https://doi.org/10.1016/S0140-6736(75)92830-5"
+      ]
+    ],
+    "cases": [
+      [
+        "Consciente, dependente para as atividades diárias: GOS 3",
+        {
+          "gos": "3"
+        },
+        {
+          "score": 3,
+          "level": "high",
+          "verdict": "desfavorável"
+        }
+      ],
+      [
+        "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+        {
+          "gos": "4"
+        },
+        {
+          "score": 4,
+          "level": "mid",
+          "verdict": "favorável"
+        }
+      ],
+      [
+        "Voltou ao trabalho: GOS 5",
+        {
+          "gos": "5"
+        },
+        {
+          "score": 5,
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "neuro-mente",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 5",
+      "label": "Glasgow Outcome Scale",
+      "fields": [
+        [
+          "gos",
+          "sel",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          1,
+          "high",
+          "Óbito",
+          ""
+        ],
+        [
+          2,
+          "high",
+          "Estado vegetativo persistente (desfecho desfavorável)",
+          ""
+        ],
+        [
+          3,
+          "high",
+          "Incapacidade grave (desfecho desfavorável)",
+          ""
+        ],
+        [
+          4,
+          "mid",
+          "Incapacidade moderada (desfecho favorável)",
+          ""
+        ],
+        [
+          5,
+          "low",
+          "Boa recuperação (desfecho favorável)",
+          ""
+        ]
+      ]
+    },
+    "areaId": "neuro-mente",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/neuro-mente.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/neuro-mente.php",
+    "sha256": "3ce3a7987a3ec63938e5f21d8d24ec7f7f8880c1b54458ef7046807a89221cac",
+    "bytes": 102818
+  },
+  "clinicalValidation": "not-performed"
+}

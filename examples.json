@@ -1,0 +1,46 @@
+[
+  {
+    "label": "Consciente, dependente para as atividades diárias: GOS 3",
+    "input": {
+      "gos": "3"
+    },
+    "expected": {
+      "score": 3,
+      "level": "high",
+      "verdict": "desfavorável"
+    },
+    "originalInput": {
+      "gos": "3"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+    "input": {
+      "gos": "4"
+    },
+    "expected": {
+      "score": 4,
+      "level": "mid",
+      "verdict": "favorável"
+    },
+    "originalInput": {
+      "gos": "4"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Voltou ao trabalho: GOS 5",
+    "input": {
+      "gos": "5"
+    },
+    "expected": {
+      "score": 5,
+      "level": "low"
+    },
+    "originalInput": {
+      "gos": "5"
+    },
+    "expandedZeroOptions": []
+  }
+]
