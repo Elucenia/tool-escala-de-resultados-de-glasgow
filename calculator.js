@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-escala-de-resultados-de-glasgow · Elucenia · https://github.com/Elucenia/tool-escala-de-resultados-de-glasgow
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escala-de-resultados-de-glasgow","title":"Escala de Resultados de Glasgow (GOS)","fields":[["gos","Situação do paciente","sel",{"opts":{"1":"1 – Óbito","2":"2 – Estado vegetativo persistente: sem resposta com significado, ciclos de sono e vigília","3":"3 – Incapacidade grave: consciente, mas depende de outra pessoa no dia a dia","4":"4 – Incapacidade moderada: independente, mas com sequelas (pode usar transporte, trabalhar em ambiente protegido)","5":"5 – Boa recuperação: retoma a vida normal, mesmo com déficits menores"}}]],"config":{"unit":"de 5","label":"Glasgow Outcome Scale","fields":[["gos","sel",0]],"bands":[[1,"high","Óbito",""],[2,"high","Estado vegetativo persistente (desfecho desfavorável)",""],[3,"high","Incapacidade grave (desfecho desfavorável)",""],[4,"mid","Incapacidade moderada (desfecho favorável)",""],[5,"low","Boa recuperação (desfecho favorável)",""]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
