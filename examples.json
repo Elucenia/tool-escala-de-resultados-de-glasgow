@@ -1,6 +1,12 @@
 [
   {
-    "label": "Consciente, dependente para as atividades diárias: GOS 3",
+    "id": "escala-de-resultados-de-glasgow",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Consciente, dependente para as atividades diárias: GOS 3",
+    "originalInput": {
+      "gos": "3"
+    },
     "input": {
       "gos": "3"
     },
@@ -9,13 +15,33 @@
       "level": "high",
       "verdict": "desfavorável"
     },
-    "originalInput": {
-      "gos": "3"
+    "recordedResult": {
+      "main": [
+        "3",
+        "de 5"
+      ],
+      "label": "Glasgow Outcome Scale",
+      "raw": {
+        "score": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+    "id": "escala-de-resultados-de-glasgow",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+    "originalInput": {
+      "gos": "4"
+    },
     "input": {
       "gos": "4"
     },
@@ -24,13 +50,33 @@
       "level": "mid",
       "verdict": "favorável"
     },
-    "originalInput": {
-      "gos": "4"
+    "recordedResult": {
+      "main": [
+        "4",
+        "de 5"
+      ],
+      "label": "Glasgow Outcome Scale",
+      "raw": {
+        "score": 4
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Voltou ao trabalho: GOS 5",
+    "id": "escala-de-resultados-de-glasgow",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Voltou ao trabalho: GOS 5",
+    "originalInput": {
+      "gos": "5"
+    },
     "input": {
       "gos": "5"
     },
@@ -38,9 +84,23 @@
       "score": 5,
       "level": "low"
     },
-    "originalInput": {
-      "gos": "5"
+    "recordedResult": {
+      "main": [
+        "5",
+        "de 5"
+      ],
+      "label": "Glasgow Outcome Scale",
+      "raw": {
+        "score": 5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

@@ -3,14 +3,15 @@
     "id": "escala-de-resultados-de-glasgow",
     "title": "Escala de Resultados de Glasgow (GOS)",
     "short": "Desfecho funcional após lesão cerebral",
+    "desc": "Escala de Resultados de Glasgow (Glasgow Outcome Scale): desfecho após trauma cranioencefálico ou lesão cerebral grave, de óbito a boa recuperação.",
+    "lead": "Classifica o desfecho global depois de lesão cerebral grave (trauma, hemorragia, hipóxia) em cinco categorias, do óbito à boa recuperação.",
+    "kind": "Escore",
     "spec": [
       "neurocirurgia",
       "medicina-intensiva",
       "medicina-fisica-e-reabilitacao",
       "neurologia"
     ],
-    "desc": "Escala de Resultados de Glasgow (Glasgow Outcome Scale): desfecho após trauma cranioencefálico ou lesão cerebral grave, de óbito a boa recuperação.",
-    "lead": "Classifica o desfecho global depois de lesão cerebral grave (trauma, hemorragia, hipóxia) em cinco categorias, do óbito à boa recuperação.",
     "fields": [
       [
         "gos",
@@ -27,81 +28,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "Glasgow Outcome Scale",
-      "unit": "de 5",
-      "bands": [
-        [
-          1,
-          "high",
-          "Óbito",
-          ""
-        ],
-        [
-          2,
-          "high",
-          "Estado vegetativo persistente (desfecho desfavorável)",
-          ""
-        ],
-        [
-          3,
-          "high",
-          "Incapacidade grave (desfecho desfavorável)",
-          ""
-        ],
-        [
-          4,
-          "mid",
-          "Incapacidade moderada (desfecho favorável)",
-          ""
-        ],
-        [
-          5,
-          "low",
-          "Boa recuperação (desfecho favorável)",
-          ""
-        ]
-      ]
-    },
     "formula": "<p>Escolha a categoria que melhor descreve o paciente. Nos estudos, o desfecho é geralmente dicotomizado em <strong>favorável</strong> (4 e 5) e <strong>desfavorável</strong> (1 a 3).</p>",
-    "table": [
-      [
-        "GOS",
-        "Categoria",
-        "Desfecho"
-      ],
-      [
-        "1",
-        "Óbito",
-        "Desfavorável"
-      ],
-      [
-        "2",
-        "Estado vegetativo persistente",
-        "Desfavorável"
-      ],
-      [
-        "3",
-        "Incapacidade grave",
-        "Desfavorável"
-      ],
-      [
-        "4",
-        "Incapacidade moderada",
-        "Favorável"
-      ],
-      [
-        "5",
-        "Boa recuperação",
-        "Favorável"
-      ]
-    ],
-    "tips": [
-      "A avaliação padrão é feita em 6 meses após a lesão; em 3 meses o desfecho ainda muda bastante, principalmente em jovens.",
-      "A GOS estendida (GOS-E, 8 categorias) divide incapacidade grave, moderada e boa recuperação em níveis superior e inferior e é mais sensível a mudanças.",
-      "Classifique pela incapacidade decorrente da lesão cerebral: limitações por fraturas ou outras lesões associadas podem confundir.",
-      "Não confunda com a escala de coma de Glasgow (nível de consciência na fase aguda)."
-    ],
     "sources": [
       [
         "Jennett B, Bond M. Assessment of outcome after severe brain damage: a practical scale. Lancet, 1975.",
@@ -142,51 +69,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 5",
-      "label": "Glasgow Outcome Scale",
-      "fields": [
-        [
-          "gos",
-          "sel",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          1,
-          "high",
-          "Óbito",
-          ""
-        ],
-        [
-          2,
-          "high",
-          "Estado vegetativo persistente (desfecho desfavorável)",
-          ""
-        ],
-        [
-          3,
-          "high",
-          "Incapacidade grave (desfecho desfavorável)",
-          ""
-        ],
-        [
-          4,
-          "mid",
-          "Incapacidade moderada (desfecho favorável)",
-          ""
-        ],
-        [
-          5,
-          "low",
-          "Boa recuperação (desfecho favorável)",
-          ""
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -195,17 +77,262 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T15:17:41.432Z",
+      "total": 5,
+      "passed": 5,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "f4e742ebd642fb1f7de96c8620d252798d8ddbf09f1653d7fd96e988d598e012",
+        "total": 5,
+        "sourceContextCount": 5,
+        "expectedEvidence": {
+          "file": "reports/review-20261003/six-classification-peer-expectations-final25.json",
+          "sha256": "f224a891b06428ed29426f073e0cc8d1ad5ad2d56b78646c85243237166bf001"
+        },
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-classification-source-oracles-independent-review-final25.json",
+          "sha256": "683814d261c3e6a11e71d38a4a1002c438f4911c020641f8f057e2253fad3afe"
+        },
+        "packagingRequirement": "Copy this complete bank into the fresh tool package; frozen final24 packages do not contain this source evidence."
+      },
+      "scope": "Only five previously selected ordinal codes 1–5 and source code meanings. No structured interview, GOSE conversion, prognosis or local favorable/unfavorable dichotomy validation.",
+      "source": {
+        "tool": "escala-de-resultados-de-glasgow",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/46957/",
+        "supplementUrl": "https://cde.nlm.nih.gov/deView?tinyId=sdkGqSvvYnT",
+        "edition": "Jennett/Bond1975 abstract and NIH/NINDS CDE five codes",
+        "access": "Direct original abstract and official permissible-value table read",
+        "readScope": "Ordinal codes1–5 only. No interview, full original paper, GOSE mapping, prognosis or favorable-dichotomy validation."
+      },
+      "evidencePath": "reports/review-20261003/six-classification-source-oracles-final25-r2.json",
+      "evidenceSha256": "06dd6f382c1dd3555db037b3b35ee7d0e4709207ad0a28df0de64fefc11038e2",
+      "peerEvidencePath": "reports/review-20261003/six-classification-source-oracles-independent-review-final25.json",
+      "peerEvidenceSha256": "683814d261c3e6a11e71d38a4a1002c438f4911c020641f8f057e2253fad3afe",
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/escala-de-resultados-de-glasgow/calculator.js",
+          "sha256": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255",
+          "importedAt": "2026-10-04T15:17:36.468Z",
+          "sourceContexts": 5,
+          "distinctApiInputs": 5,
+          "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escala-de-resultados-de-glasgow/calculator.js",
+          "sha256": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255",
+          "importedAt": "2026-10-04T15:17:36.989Z",
+          "sourceContexts": 5,
+          "distinctApiInputs": 5,
+          "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escala-de-resultados-de-glasgow/calculator.js",
+          "sha256": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255",
+          "importedAt": "2026-10-04T15:17:37.689Z",
+          "sourceContexts": 5,
+          "distinctApiInputs": 5,
+          "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+        }
+      ],
+      "sourceContextCount": 5,
+      "uniqueApiInputCount": 5,
+      "actualAdapterExecutions": 15,
+      "isolatedChromiumExecutions": 5,
+      "qualifications": [
+        "Only five previously selected ordinal codes 1–5 and source code meanings. No structured interview, GOSE conversion, prognosis or local favorable/unfavorable dichotomy validation.",
+        "CIWA4229 patterns are pairwise/boundary/supplemental coverage, not all671088640 possible inputs.",
+        "Fisher10 source-feature contexts map to five unique API grade-code inputs. The feature-to-grade assignment was independently reconstructed from Table1 by the test; it is not implemented as an automated CT classifier.",
+        "WFNS GCS15 plus deficit has no original table assignment and is recorded only as a local-fallback observation.",
+        "Forrest/GOS/Fisher inputs represent classifications selected before use; numeric/code echo is not diagnosis, prognosis, risk calibration or therapeutic approval.",
+        "Original source cases, historical expected values and tolerances remain unchanged.",
+        "Original historical cases, expected values and tolerances remain unchanged. Separate Fisher source-description amendment changes only the explicitly recorded description/formula/version metadata; all clinical/professional/rights/release approval flags remain unchanged. Passed status describes only the named integer/code scope."
+      ],
+      "unresolvedSourceFindings": [],
+      "excludedObservations": [],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "GOS/Jennett Bond 1975:5 categorias; favorável 4–5; sem GOSE 8 categorias",
+    "implementationVersion": "escala-de-resultados-de-glasgow@native-2026-10-03+1f20d91f6678",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/46957/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Escolha a categoria que melhor descreve o paciente. Nos estudos, o desfecho é geralmente dicotomizado em favorável (4 e 5) e desfavorável (1 a 3).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "gos",
+            "label": "Situação do paciente",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "1": "1 – Óbito",
+              "2": "2 – Estado vegetativo persistente: sem resposta com significado, ciclos de sono e vigília",
+              "3": "3 – Incapacidade grave: consciente, mas depende de outra pessoa no dia a dia",
+              "4": "4 – Incapacidade moderada: independente, mas com sequelas (pode usar transporte, trabalhar em ambiente protegido)",
+              "5": "5 – Boa recuperação: retoma a vida normal, mesmo com déficits menores"
+            }
+          }
+        ],
+        "hash": "90f69d3a3811a86fa3e2c711412c1447609a5cf1f90c7a84700af8293d9650a1"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Jennett B, Bond M. Assessment of outcome after severe brain damage: a practical scale. Lancet, 1975.",
+          "url": "https://doi.org/10.1016/S0140-6736(75)92830-5",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Assessment of outcome after severe brain damage.",
+            "year": "1975",
+            "firstPublicationDate": "1975-03-01",
+            "doi": "10.1016/s0140-6736(75)92830-5",
+            "pmid": "46957",
+            "journal": "Lancet (London, England)",
+            "authors": "Jennett B, Bond M."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/46957/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "06628932d5e9c8ecd688330fd3819e9f7fe1b42a0a755c672e1e010797531112",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T15:17:41.432Z",
+        "total": 5,
+        "passed": 5,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "f4e742ebd642fb1f7de96c8620d252798d8ddbf09f1653d7fd96e988d598e012",
+          "total": 5,
+          "sourceContextCount": 5,
+          "expectedEvidence": {
+            "file": "reports/review-20261003/six-classification-peer-expectations-final25.json",
+            "sha256": "f224a891b06428ed29426f073e0cc8d1ad5ad2d56b78646c85243237166bf001"
+          },
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-classification-source-oracles-independent-review-final25.json",
+            "sha256": "683814d261c3e6a11e71d38a4a1002c438f4911c020641f8f057e2253fad3afe"
+          },
+          "packagingRequirement": "Copy this complete bank into the fresh tool package; frozen final24 packages do not contain this source evidence."
+        },
+        "scope": "Only five previously selected ordinal codes 1–5 and source code meanings. No structured interview, GOSE conversion, prognosis or local favorable/unfavorable dichotomy validation.",
+        "source": {
+          "tool": "escala-de-resultados-de-glasgow",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/46957/",
+          "supplementUrl": "https://cde.nlm.nih.gov/deView?tinyId=sdkGqSvvYnT",
+          "edition": "Jennett/Bond1975 abstract and NIH/NINDS CDE five codes",
+          "access": "Direct original abstract and official permissible-value table read",
+          "readScope": "Ordinal codes1–5 only. No interview, full original paper, GOSE mapping, prognosis or favorable-dichotomy validation."
+        },
+        "evidencePath": "reports/review-20261003/six-classification-source-oracles-final25-r2.json",
+        "evidenceSha256": "06dd6f382c1dd3555db037b3b35ee7d0e4709207ad0a28df0de64fefc11038e2",
+        "peerEvidencePath": "reports/review-20261003/six-classification-source-oracles-independent-review-final25.json",
+        "peerEvidenceSha256": "683814d261c3e6a11e71d38a4a1002c438f4911c020641f8f057e2253fad3afe",
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/escala-de-resultados-de-glasgow/calculator.js",
+            "sha256": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255",
+            "importedAt": "2026-10-04T15:17:36.468Z",
+            "sourceContexts": 5,
+            "distinctApiInputs": 5,
+            "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escala-de-resultados-de-glasgow/calculator.js",
+            "sha256": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255",
+            "importedAt": "2026-10-04T15:17:36.989Z",
+            "sourceContexts": 5,
+            "distinctApiInputs": 5,
+            "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escala-de-resultados-de-glasgow/calculator.js",
+            "sha256": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255",
+            "importedAt": "2026-10-04T15:17:37.689Z",
+            "sourceContexts": 5,
+            "distinctApiInputs": 5,
+            "instrumentation": "One readonly internal observer exposed only in VM; original function/config bytes not changed."
+          }
+        ],
+        "sourceContextCount": 5,
+        "uniqueApiInputCount": 5,
+        "actualAdapterExecutions": 15,
+        "isolatedChromiumExecutions": 5,
+        "qualifications": [
+          "Only five previously selected ordinal codes 1–5 and source code meanings. No structured interview, GOSE conversion, prognosis or local favorable/unfavorable dichotomy validation.",
+          "CIWA4229 patterns are pairwise/boundary/supplemental coverage, not all671088640 possible inputs.",
+          "Fisher10 source-feature contexts map to five unique API grade-code inputs. The feature-to-grade assignment was independently reconstructed from Table1 by the test; it is not implemented as an automated CT classifier.",
+          "WFNS GCS15 plus deficit has no original table assignment and is recorded only as a local-fallback observation.",
+          "Forrest/GOS/Fisher inputs represent classifications selected before use; numeric/code echo is not diagnosis, prognosis, risk calibration or therapeutic approval.",
+          "Original source cases, historical expected values and tolerances remain unchanged.",
+          "Original historical cases, expected values and tolerances remain unchanged. Separate Fisher source-description amendment changes only the explicitly recorded description/formula/version metadata; all clinical/professional/rights/release approval flags remain unchanged. Passed status describes only the named integer/code scope."
+        ],
+        "unresolvedSourceFindings": [],
+        "excludedObservations": [],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255"
+    },
+    "limits": "Avalia desfecho funcional após lesão cerebral considerando incapacidade física e mental. Registre o tempo de seguimento e a edição de cinco categorias. A GOS não deve ser tratada como equivalente à GOSE de oito categorias ou como uma previsão a partir de dados de admissão.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.861Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Rubricas integrais e ponto temporal específico do protocolo não foram lidos no artigo integral."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escala-de-resultados-de-glasgow/calculator.js",
+    "bytes": 4885,
+    "sha256": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "df66cae365192dba5902992172e583aeb954f7995137bfe44e6c9fa9a1b12cc1",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "1b3da0da1af6dd6d76a357bad51a171172b1c4cfb5cdec2382fb902576fb3892",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "1b3da0da1af6dd6d76a357bad51a171172b1c4cfb5cdec2382fb902576fb3892",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
