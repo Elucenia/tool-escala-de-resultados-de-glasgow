@@ -1,0 +1,387 @@
+{
+  "id": "escala-de-resultados-de-glasgow",
+  "implementationVersion": "escala-de-resultados-de-glasgow@native-2026-10-05+655802cc268e",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Consciente, dependente para as atividades diárias: GOS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incapacidade grave (desfecho desfavorável)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Incapacidade moderada (desfecho favorável)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Voltou ao trabalho: GOS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Boa recuperação (desfecho favorável)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Consciente, dependente para as atividades diárias: GOS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Severe disability (unfavorable outcome)",
+            "locale": "en",
+            "template": "documented-authored-0dbc1e1054628a08c37b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate disability (favorable outcome)",
+            "locale": "en",
+            "template": "documented-authored-1dd4deb80605daffb227"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Voltou ao trabalho: GOS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Good recovery (favorable outcome)",
+            "locale": "en",
+            "template": "documented-authored-acaa29f75c1e5018a1fb"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Consciente, dependente para as atividades diárias: GOS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Discapacidad grave (desenlace desfavorable)",
+            "locale": "es",
+            "template": "documented-authored-0dbc1e1054628a08c37b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Discapacidad moderada (desenlace favorable)",
+            "locale": "es",
+            "template": "documented-authored-1dd4deb80605daffb227"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Voltou ao trabalho: GOS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Buena recuperación (desenlace favorable)",
+            "locale": "es",
+            "template": "documented-authored-acaa29f75c1e5018a1fb"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Consciente, dependente para as atividades diárias: GOS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Invalidité sévère (issue défavorable)",
+            "locale": "fr",
+            "template": "documented-authored-0dbc1e1054628a08c37b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Invalidité modérée (issue favorable)",
+            "locale": "fr",
+            "template": "documented-authored-1dd4deb80605daffb227"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Voltou ao trabalho: GOS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Bonne récupération (issue favorable)",
+            "locale": "fr",
+            "template": "documented-authored-acaa29f75c1e5018a1fb"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Consciente, dependente para as atividades diárias: GOS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Schwere Behinderung (ungünstiges Ergebnis)",
+            "locale": "de",
+            "template": "documented-authored-0dbc1e1054628a08c37b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßige Behinderung (günstiges Ergebnis)",
+            "locale": "de",
+            "template": "documented-authored-1dd4deb80605daffb227"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Voltou ao trabalho: GOS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Gute Erholung (günstiges Ergebnis)",
+            "locale": "de",
+            "template": "documented-authored-acaa29f75c1e5018a1fb"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Consciente, dependente para as atividades diárias: GOS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Disabilità grave (esito sfavorevole)",
+            "locale": "it",
+            "template": "documented-authored-0dbc1e1054628a08c37b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Disabilità moderata (esito favorevole)",
+            "locale": "it",
+            "template": "documented-authored-1dd4deb80605daffb227"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Voltou ao trabalho: GOS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Buon recupero (esito favorevole)",
+            "locale": "it",
+            "template": "documented-authored-acaa29f75c1e5018a1fb"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Consciente, dependente para as atividades diárias: GOS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "إعاقة شديدة (مآل غير موات)",
+            "locale": "ar",
+            "template": "documented-authored-0dbc1e1054628a08c37b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "إعاقة متوسطة (مآل موات)",
+            "locale": "ar",
+            "template": "documented-authored-1dd4deb80605daffb227"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Voltou ao trabalho: GOS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "تعافٍ جيد (مآل موات)",
+            "locale": "ar",
+            "template": "documented-authored-acaa29f75c1e5018a1fb"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Consciente, dependente para as atividades diárias: GOS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度残疾（不良结局）",
+            "locale": "zh",
+            "template": "documented-authored-0dbc1e1054628a08c37b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中度残疾（良好结局）",
+            "locale": "zh",
+            "template": "documented-authored-1dd4deb80605daffb227"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Voltou ao trabalho: GOS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "良好恢复（良好结局）",
+            "locale": "zh",
+            "template": "documented-authored-acaa29f75c1e5018a1fb"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Consciente, dependente para as atividades diárias: GOS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度の障害（不良転帰）",
+            "locale": "ja",
+            "template": "documented-authored-0dbc1e1054628a08c37b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度の障害（良好転帰）",
+            "locale": "ja",
+            "template": "documented-authored-1dd4deb80605daffb227"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Voltou ao trabalho: GOS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "良好な回復（良好転帰）",
+            "locale": "ja",
+            "template": "documented-authored-acaa29f75c1e5018a1fb"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Consciente, dependente para as atividades diárias: GOS 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "गंभीर अक्षमता (प्रतिकूल परिणाम)",
+            "locale": "hi",
+            "template": "documented-authored-0dbc1e1054628a08c37b"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम अक्षमता (अनुकूल परिणाम)",
+            "locale": "hi",
+            "template": "documented-authored-1dd4deb80605daffb227"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Voltou ao trabalho: GOS 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अच्छी रिकवरी (अनुकूल परिणाम)",
+            "locale": "hi",
+            "template": "documented-authored-acaa29f75c1e5018a1fb"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

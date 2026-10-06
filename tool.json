@@ -160,7 +160,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "GOS/Jennett Bond 1975:5 categorias; favorável 4–5; sem GOSE 8 categorias",
-    "implementationVersion": "escala-de-resultados-de-glasgow@native-2026-10-03+1f20d91f6678",
+    "implementationVersion": "escala-de-resultados-de-glasgow@native-2026-10-05+655802cc268e",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/46957/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -297,7 +297,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255"
+      "implementationHash": "655802cc268e667b6e196b2a6811bc3f01e3925b4b6a92ddc18dfb977ec97d34",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escala-de-resultados-de-glasgow@native-2026-10-03+1f20d91f6678",
+          "previousImplementationHash": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255",
+          "implementationHash": "655802cc268e667b6e196b2a6811bc3f01e3925b4b6a92ddc18dfb977ec97d34",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "90f69d3a3811a86fa3e2c711412c1447609a5cf1f90c7a84700af8293d9650a1",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Avalia desfecho funcional após lesão cerebral considerando incapacidade física e mental. Registre o tempo de seguimento e a edição de cinco categorias. A GOS não deve ser tratada como equivalente à GOSE de oito categorias ou como uma previsão a partir de dados de admissão.",
     "sourceLimitEvidence": {
@@ -316,20 +344,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escala-de-resultados-de-glasgow/calculator.js",
-    "bytes": 4885,
-    "sha256": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255"
+    "bytes": 5090,
+    "sha256": "655802cc268e667b6e196b2a6811bc3f01e3925b4b6a92ddc18dfb977ec97d34"
   },
-  "sourceToolSha256": "df66cae365192dba5902992172e583aeb954f7995137bfe44e6c9fa9a1b12cc1",
+  "sourceToolSha256": "11f103780bea950d82bf7cb811e34913255a88ea51acf64d7d4a9f9c88aedc50",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "1b3da0da1af6dd6d76a357bad51a171172b1c4cfb5cdec2382fb902576fb3892",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "1b3da0da1af6dd6d76a357bad51a171172b1c4cfb5cdec2382fb902576fb3892",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -1,0 +1,159 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escala-de-resultados-de-glasgow",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "2596d856565aec97b87497c3041868938554c2c9",
+    "oldEngineSha256": "1f20d91f66784db9e789b28da444a94e9d0090fb7d63ba21206f267d35da3255",
+    "currentEngineSha256": "655802cc268e667b6e196b2a6811bc3f01e3925b4b6a92ddc18dfb977ec97d34"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Consciente, dependente para as atividades diárias: GOS 3",
+      "input": {
+        "gos": "3"
+      },
+      "publicOutput": {
+        "id": "escala-de-resultados-de-glasgow",
+        "main": [
+          "3",
+          "de 5"
+        ],
+        "label": "Glasgow Outcome Scale",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "high",
+        "verdict": "desfavorável"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "de 5"
+        ],
+        "label": "Glasgow Outcome Scale",
+        "level": "high",
+        "verdict": "Incapacidade grave (desfecho desfavorável)",
+        "note": "",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Independente com hemiparesia leve, não voltou ao trabalho: GOS 4",
+      "input": {
+        "gos": "4"
+      },
+      "publicOutput": {
+        "id": "escala-de-resultados-de-glasgow",
+        "main": [
+          "4",
+          "de 5"
+        ],
+        "label": "Glasgow Outcome Scale",
+        "raw": {
+          "score": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 4,
+        "level": "mid",
+        "verdict": "favorável"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "de 5"
+        ],
+        "label": "Glasgow Outcome Scale",
+        "level": "mid",
+        "verdict": "Incapacidade moderada (desfecho favorável)",
+        "note": "",
+        "raw": {
+          "score": 4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Voltou ao trabalho: GOS 5",
+      "input": {
+        "gos": "5"
+      },
+      "publicOutput": {
+        "id": "escala-de-resultados-de-glasgow",
+        "main": [
+          "5",
+          "de 5"
+        ],
+        "label": "Glasgow Outcome Scale",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "de 5"
+        ],
+        "label": "Glasgow Outcome Scale",
+        "level": "low",
+        "verdict": "Boa recuperação (desfecho favorável)",
+        "note": "",
+        "raw": {
+          "score": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    }
+  ]
+}
